@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../SCSS/style.scss",
+        "../SCSS/_base.scss",
+        "../SCSS/_variables.scss",
+        "../SCSS/_buttons.scss",
+        "../SCSS/_mainWindow.scss",
+        "../SCSS/_listContainer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
