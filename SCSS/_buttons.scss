@@ -21,6 +21,10 @@
         background-color: $main-color;
     }
 
+    &:hover>.fa-undo {
+        color: $background-color;
+    }
+
     .fa-undo {
         display: block;
         color: $accent-dark;
