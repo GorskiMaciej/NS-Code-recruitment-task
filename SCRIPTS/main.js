@@ -32,23 +32,24 @@ const renderUserList = (users) => {
         liElement.classList.add('list-window__lits-item');
         liElement.innerHTML = `
     <div class="user">
-        <div class="user__main-info">
-            <div class="user__avatar-container">
-                <img class="user__avatar-img" src="IMG/avatar_512.png" alt="avatar">
-            </div>
-            <div class="user__main-info-text">
-                <p class="user__text user__text--main">${user.name}</p>
-                <p class="user__text">e-mail: ${user.email}</p>
-            </div>
-            <div class="user__toggle-btn"></div>
-
+        <div class="user__avatar-container">
+            <img class="user__avatar-img" src="IMG/avatar_512.png" alt="avatar">
         </div>
-        <div class="user__additional-info">
-            <p class="user__text">Adres:</p>
-            <p class="user__text">${user.street} ${user.suite}</p>
-            <p class="user__text">${user.zipcode} ${user.city} </p>
-            <p class="user__text">telefon: ${user.phone}</p>
-            <p class="user__text">www:<a href="${user.website}"><p class="user__text">${user.website}</p></a></p>
+        <div class="user__info">
+            <div class="user__info-main">
+                <div class="user__info-main-text">
+                    <p class="user__text user__text--main">${user.name}</p>
+                    <p class="user__text">e-mail: ${user.email}</p>
+                </div>
+                <div class="user__toggle-btn"><i class="fas fa-arrow-circle-down"></i></div>
+            </div>
+            <div class="user__info-additional">
+                <p class="user__text">Adres:</p>
+                <p class="user__text">${user.street} ${user.suite}</p>
+                <p class="user__text">${user.zipcode} ${user.city} </p>
+                <p class="user__text">phone: ${user.phone}</p>
+                <p class="user__text">www:<a href="${user.website}"><p class="user__text">${user.website}</p></a></p>
+            </div>
         </div>
     </div>`;
         listContainer.appendChild(liElement);
