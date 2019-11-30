@@ -1,0 +1,27 @@
+.start-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+
+    width: 100%;
+    height: 100%;
+
+    &__button-get-users {
+        padding: 5px 40px;
+        // border: 1px solid $accent;
+        border: none;
+        border-radius: 5px;
+        color: $accent-dark;
+        background-color: $mainWindow-color;
+        box-shadow: 0px 0px 2px 0 $main-color;
+        font-size: 1.2rem;
+        font-family: $main-font;
+        transition: 0.3s;
+
+        &:hover {
+            color: $background-color;
+            background-color: $main-color;
+        }
+    }
+}

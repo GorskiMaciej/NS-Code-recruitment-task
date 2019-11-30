@@ -3,6 +3,73 @@
   margin: 0;
   padding: 0; }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: #D1DBBD; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 512px;
+  height: 100%;
+  background-color: #FCFFF5;
+  -webkit-box-shadow: 0px 0px 5px 0 #91AA9D;
+          box-shadow: 0px 0px 5px 0 #91AA9D; }
+
 .off {
   display: none; }
+
+.button {
+  cursor: pointer; }
+
+.button--reset .fa-undo {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  font-size: 1rem; }
+
+.start-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  width: 100%;
+  height: 100%; }
+  .start-window__button-get-users {
+    padding: 5px 40px;
+    border: none;
+    border-radius: 5px;
+    color: #062026;
+    background-color: #D1DBBD;
+    -webkit-box-shadow: 0px 0px 2px 0 #91AA9D;
+            box-shadow: 0px 0px 2px 0 #91AA9D;
+    font-size: 1.2rem;
+    font-family: "Sulphur Point", arial, sans-serif;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .start-window__button-get-users:hover {
+      color: #FCFFF5;
+      background-color: #91AA9D; }
+
+.list-window {
+  width: 100%;
+  min-height: 100%; }
 /*# sourceMappingURL=style.css.map */
