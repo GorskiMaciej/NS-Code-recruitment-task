@@ -6,7 +6,19 @@
         display: none;
     }
 
-    &__list-container {}
+    &__title {
+        padding: 15px;
+        color: $background-color;
+        background-color: $accent;
+        font-family: $main-font;
+        font-weight: 700;
+    }
+
+    &__list-container {
+        margin: 1rem;
+    }
 
     &__lits-item {}
+
+    &__return-button {}
 }
