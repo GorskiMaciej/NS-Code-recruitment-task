@@ -1,4 +1,4 @@
-const getUserBtn = document.querySelector('.button--get-users');
+const getUserBtn = document.querySelector('.start-window__button-get-users');
 const resetBtn = document.querySelector('.button--reset');
 const listContainer = document.querySelector('.list-window__list-container');
 const startWindow = document.querySelector('.start-window');
@@ -40,7 +40,7 @@ const renderUserList = (users) => {
                 <p class="user__text user__text--main">${user.name}</p>
                 <p class="user__text">e-mail: ${user.email}</p>
             </div>
-            <div class="user__toggleBtn"></div>
+            <div class="user__toggle-btn"></div>
 
         </div>
         <div class="user__additional-info">
@@ -61,8 +61,8 @@ const clearUserList = () => {
 }
 
 const switchWindows = () => {
-    startWindow.classList.toggle('off');
-    listWindow.classList.toggle('off');
+    startWindow.classList.toggle('start-window--off');
+    listWindow.classList.toggle('list-window--off');
 }
 
 class User {

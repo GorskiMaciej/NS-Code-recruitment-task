@@ -7,9 +7,12 @@
     width: 100%;
     height: 100%;
 
+    &--off {
+        display: none;
+    }
+
     &__button-get-users {
         padding: 5px 40px;
-        // border: 1px solid $accent;
         border: none;
         border-radius: 5px;
         color: $accent-dark;
