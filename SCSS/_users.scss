@@ -1,0 +1,15 @@
+.user {
+    &__main-info {
+        &-text {}
+    }
+
+    &__additional-info {}
+
+    &__avatar-img {}
+
+    &__text {
+        &--main {}
+    }
+
+    &__toggle-btn {}
+}
