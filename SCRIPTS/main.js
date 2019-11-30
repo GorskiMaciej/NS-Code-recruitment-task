@@ -34,7 +34,7 @@ const renderUserList = (users) => {
     <div class="user">
         <div class="user__main-info">
             <div class="user__avatar-container">
-                <img class="user__avatar-img" src="https://picsum.photos/50" alt="avatar">
+                <img class="user__avatar-img" src="IMG/avatar_512.png" alt="avatar">
             </div>
             <div class="user__main-info-text">
                 <p class="user__text user__text--main">${user.name}</p>
