@@ -44,6 +44,11 @@ body {
           box-shadow: 0px 0px 2px 0 #91AA9D;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
+  @media only screen and (max-width: 1023px) {
+    .button--reset {
+      position: fixed;
+      bottom: 10px;
+      left: 10px; } }
   .button--reset:hover {
     color: #FCFFF5;
     background-color: #91AA9D; }
@@ -97,8 +102,9 @@ body {
     color: #FCFFF5;
     background-color: #3E606F;
     font-family: "Sulphur Point", arial, sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-align: center;
     letter-spacing: 1px; }
   .list-window__list-container {
     margin: 1rem; }

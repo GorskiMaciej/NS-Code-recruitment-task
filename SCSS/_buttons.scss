@@ -16,6 +16,12 @@
     box-shadow: 0px 0px 2px 0 $main-color;
     transition: 0.3s;
 
+    @media only screen and (max-width: 1023px) {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+    }
+
     &:hover {
         color: $background-color;
         background-color: $main-color;
