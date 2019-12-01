@@ -118,6 +118,9 @@ body {
   font-family: "Sulphur Point", arial, sans-serif; }
   .user__text--main {
     font-weight: 700; }
+  .user__avatar-container {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
   .user__avatar-img {
     margin-right: 1rem;
     width: 50px;
@@ -136,16 +139,23 @@ body {
   .user__toggle-btn {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
-        align-self: center; }
+        align-self: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
     .user__toggle-btn:hover > .fa-arrow-circle-down {
-      color: #3E606F; }
+      color: #598aa0; }
+    .user__toggle-btn--clicked {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
     .user__toggle-btn .fa-arrow-circle-down {
-      color: #D1DBBD;
+      color: #3E606F;
       border-radius: 50%;
       font-size: 1.5rem;
       cursor: pointer;
       -webkit-transition: 0.3s;
       transition: 0.3s; }
   .user__info-additional {
-    display: none; }
+    display: block; }
+    .user__info-additional--off {
+      display: none; }
 /*# sourceMappingURL=style.css.map */

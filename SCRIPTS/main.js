@@ -63,6 +63,7 @@ const addMoreInfoToggle = () => {
         arrow.addEventListener('click', () => {
             const additionalInfoElement = document.querySelector(`[data-user-index="${index}"]`);
             additionalInfoElement.classList.toggle('user__info-additional--off');
+            arrow.classList.toggle('user__toggle-btn--clicked');
 
         });
     })
