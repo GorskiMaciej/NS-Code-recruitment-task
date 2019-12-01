@@ -13,7 +13,9 @@
         }
     }
 
-    &__avatar-container {}
+    &__avatar-container {
+        align-self: flex-start;
+    }
 
     &__avatar-img {
         margin-right: 1rem;
@@ -49,6 +51,10 @@
     }
 
     &__info-additional {
-        display: none;
+        display: block;
+
+        &--off {
+            display: none;
+        }
     }
 }
