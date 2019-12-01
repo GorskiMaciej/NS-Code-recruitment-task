@@ -41,7 +41,7 @@ const renderUserList = (users) => {
                     <p class="user__text user__text--main">${user.name}</p>
                     <p class="user__text">e-mail: ${user.email}</p>
                 </div>
-                <div class="user__toggle-btn"><i class="fas fa-arrow-circle-down"></i></div>
+                <div class="user__toggle-btn user__toggle-btn--off"><i class="fas fa-arrow-circle-down"></i></div>
             </div>
             <div class="user__info-additional">
                 <p class="user__text">Adres:</p>
@@ -54,7 +54,18 @@ const renderUserList = (users) => {
     </div>`;
         listContainer.appendChild(liElement);
     });
+    addMoreInfoToggle();
 }
+
+const addMoreInfoToggle = () => {
+    const arrowsToggle = [...document.querySelectorAll('.user__toggle-btn')];
+    arrowsToggle.forEach(arrow => {
+        arrow.addEventListener('click', () => {
+            arrow.classList.toggle('user__toggle-btn--off');
+        });
+    })
+}
+
 
 const clearUserList = () => {
     usersList.length = 0;
@@ -65,6 +76,8 @@ const switchWindows = () => {
     startWindow.classList.toggle('start-window--off');
     listWindow.classList.toggle('list-window--off');
 }
+
+
 
 class User {
     constructor(user) {
