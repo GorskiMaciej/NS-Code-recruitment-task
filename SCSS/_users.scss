@@ -52,7 +52,7 @@
         justify-content: space-between;
     }
 
-    &__info-main-text {}
+    // &__info-main-text {}
 
     &__toggle-btn {
         align-self: center;
@@ -60,6 +60,10 @@
 
         &:hover>.fa-arrow-circle-down {
             color: lighten($accent, 15%);
+
+            @media only screen and (max-width: 1023px) {
+                color: $accent;
+            }
         }
 
         &--clicked {

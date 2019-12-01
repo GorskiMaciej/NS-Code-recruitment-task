@@ -159,6 +159,9 @@ body {
     transition: 0.5s; }
     .user__toggle-btn:hover > .fa-arrow-circle-down {
       color: #598aa0; }
+      @media only screen and (max-width: 1023px) {
+        .user__toggle-btn:hover > .fa-arrow-circle-down {
+          color: #3E606F; } }
     .user__toggle-btn--clicked {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); }
