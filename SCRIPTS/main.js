@@ -33,7 +33,7 @@ const renderUserList = (users) => {
         liElement.innerHTML = `
     <div class="user">
         <div class="user__avatar-container">
-            <img class="user__avatar-img" src="IMG/avatar_512.png" alt="avatar">
+            <img class="user__avatar-img" src="IMG/avatar_128.png" alt="avatar">
         </div>
         <div class="user__info">
             <div class="user__info-main">
@@ -44,11 +44,11 @@ const renderUserList = (users) => {
                 <div class="user__toggle-btn"><i class="fas fa-arrow-circle-down"></i></div>
             </div>
             <div data-user-index="${index}" class="user__info-additional user__info-additional--off">
-                <p class="user__text">Adres:</p>
+                <p class="user__text"><span class="user__text--sub-title">Adres:</span></p>
                 <p class="user__text">${user.street} ${user.suite}</p>
                 <p class="user__text">${user.zipcode} ${user.city} </p>
-                <p class="user__text">phone: ${user.phone}</p>
-                <p class="user__text">www:<a href="${user.website}"><p class="user__text">${user.website}</p></a></p>
+                <p class="user__text"><span class="user__text--sub-title">Phone:</span> ${user.phone}</p>
+                <p class="user__text"><span class="user__text--sub-title">www:</span><a href="${user.website}" class="user__text user__text--href"> ${user.website}</a></p>
             </div>
         </div>
     </div>`;

@@ -8,8 +8,28 @@
     font-family: $main-font;
 
     &__text {
+        color: $accent-dark;
+        font-weight: 300;
+
         &--main {
             font-weight: 700;
+        }
+
+        &--sub-title {
+            display: inline;
+            font-weight: 700;
+        }
+
+        &--href {
+            display: inline;
+            color: $accent;
+            font-weight: 400;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                color: $accent-dark;
+            }
         }
     }
 

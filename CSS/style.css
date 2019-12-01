@@ -117,8 +117,22 @@ body {
   width: 100%;
   border-bottom: 1px solid #062026;
   font-family: "Sulphur Point", arial, sans-serif; }
-  .user__text--main {
-    font-weight: 700; }
+  .user__text {
+    color: #062026;
+    font-weight: 300; }
+    .user__text--main {
+      font-weight: 700; }
+    .user__text--sub-title {
+      display: inline;
+      font-weight: 700; }
+    .user__text--href {
+      display: inline;
+      color: #3E606F;
+      font-weight: 400;
+      text-decoration: none; }
+      .user__text--href:hover {
+        cursor: pointer;
+        color: #062026; }
   .user__avatar-container {
     -ms-flex-item-align: start;
         align-self: flex-start; }
